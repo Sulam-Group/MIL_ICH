@@ -41,3 +41,6 @@ The content of the `data` folder is available on Zenodo [https://zenodo.org/reco
 
 2. **Download the models**
 The content of the `models` folder is available on Zenodo as well [https://zenodo.org/record/7363182](https://zenodo.org/record/7363182#.Y4Fpj-zMLdo). This folder contains the trained models. The folder `models` should be placed in the root of this repository. Note that it is not necessary to download the models to reproduce the figures, since the precomputed predictions are available in the `data` folder. To use the models and reproduce the predictions, it is necessary to download and preprocess the datasets as described in the Methods section of the paper, maintaining the splits used in this work. To predict and explain, use the scripts in the respective folders.
+
+3. **Run the notebooks**
+As noted in section `0`, run the notebooks to reproduce the corresponding figures.
