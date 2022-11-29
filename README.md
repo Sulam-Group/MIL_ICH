@@ -1,4 +1,4 @@
-# _"Weakly-Supervised Learning Significantly Reduces the Number of Labels Required for Intracranial Hemorrhage Detection in Head CT"_
+# _"Weakly Supervised Learning Significantly Reduces the Number of Labels Required for Intracranial Hemorrhage Detection in Head CT"_
 
 [![zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.7363182.svg)](https://zenodo.org/record/7363182)
 
