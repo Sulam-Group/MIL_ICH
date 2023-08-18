@@ -1,12 +1,13 @@
-import os
 import argparse
+import os
 import sys
 import time
-import torch
-import pandas as pd
+
 import numpy as np
-from torch.utils.data import DataLoader
+import pandas as pd
+import torch
 from sklearn import metrics
+from torch.utils.data import DataLoader
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--gpu", type=int, default=0)
@@ -21,9 +22,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 root_dir = "../../"
 sys.path.append(root_dir)
 
-from model import HemorrhageDetector
 from dataset import CQ500Dataset
-from utils import models, image_explainers as exp_mapper
+from model import HemorrhageDetector
+from utils import explainers as exp_mapper
+from utils import models
 
 model_dir = os.path.join(root_dir, "models")
 data_dir = os.path.join(root_dir, "data")

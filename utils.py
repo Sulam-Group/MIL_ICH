@@ -1,12 +1,13 @@
+import json
 import os
+from itertools import chain
+
+import hshap
+import matplotlib.patches as patches
 import numpy as np
 import pandas as pd
 import torch
-import hshap
-import matplotlib.patches as patches
-import json
 from pytorch_grad_cam import GradCAM
-from itertools import chain
 from sklearn import metrics
 
 
@@ -78,7 +79,7 @@ def R(m):
         return 15
     if m in [796, 1000]:
         return 10
-    if m in [3000, 6000, 10000]:
+    if m == 10000:
         return 6
     if m >= 17000:
         return 1
@@ -352,7 +353,7 @@ def hexp_explain(hexp, image_t, **kwargs):
     return explanation.squeeze() / (len(R) * len(A))
 
 
-image_explainers = [
+explainers = [
     {
         "title": "GRAD-CAM",
         "name": "gradcam",

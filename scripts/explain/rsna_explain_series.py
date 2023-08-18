@@ -1,9 +1,10 @@
-import os
 import argparse
+import os
 import sys
+
+import hshap
 import numpy as np
 import pandas as pd
-import hshap
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -23,9 +24,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 root_dir = "../../"
 sys.path.append(root_dir)
 
-from model import HemorrhageDetector
 from dataset import RSNADataset
-from utils import series_explainers, label_complexity_models, models
+from model import HemorrhageDetector
+from utils import label_complexity_models, models, series_explainers
 
 if LABEL_COMPLEXITY:
     models = label_complexity_models

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from entmax import sparsemax, entmax15
+from entmax import entmax15, sparsemax
 
 
 class HemorrhageDetector(nn.Module):

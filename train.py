@@ -1,12 +1,13 @@
-import os
 import argparse
+import os
+
 import torch
 import wandb
 from torch.utils.data.dataloader import DataLoader
 from tqdm import tqdm
 
-from model import HemorrhageDetector
 from dataset import RSNADataset
+from model import HemorrhageDetector
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--weak_supervision", action="store_true", default=False)

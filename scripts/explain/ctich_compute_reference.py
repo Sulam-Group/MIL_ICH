@@ -1,7 +1,8 @@
 import os
 import sys
-import torch
+
 import matplotlib.pyplot as plt
+import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 

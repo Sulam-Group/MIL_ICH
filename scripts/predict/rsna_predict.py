@@ -1,9 +1,10 @@
+import argparse
 import os
 import sys
-import argparse
-import torch
-import pandas as pd
+
 import numpy as np
+import pandas as pd
+import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
@@ -21,8 +22,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 root_dir = "../../"
 sys.path.append(root_dir)
 
-from model import HemorrhageDetector
 from dataset import RSNADataset
+from model import HemorrhageDetector
 
 model_dir = os.path.join(root_dir, "models")
 data_dir = os.path.join(root_dir, "data")
