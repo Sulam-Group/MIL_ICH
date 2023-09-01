@@ -52,7 +52,7 @@ for r in range(start_idx, R):
     run_name = f"[{gpu}] {'global' if weak_supervision else 'local'}_{m}_{r}"
     wandb.init(
         project="label-complexity-hemorrhage-detection",
-        entity="jacopoteneggi",
+        entity="<REDACTED FOR ANONYMITY>",
         name=run_name,
     )
 
